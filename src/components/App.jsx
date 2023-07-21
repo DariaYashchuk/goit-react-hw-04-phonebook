@@ -50,14 +50,6 @@ export const App = () => {
 
   const visibleContacts = getVisibleContacts();
 
-  //  componentDidMount() {
-  // const parsedContacts = JSON.parse(localStorage.getItem('contacts'));
-
-  // if (parsedContacts) {
-  //   this.setState({ contacts: parsedContacts });
-  // }
-  // }
-
   useEffect(() => {
     localStorage.setItem('contacts', JSON.stringify(contacts));
   }, [contacts]);
